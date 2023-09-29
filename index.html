@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100;500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading">Index Body Mass</h1>
+      <p id="para">Calculator</p>
+      <form>
+        <div class="weight-container">
+          <label for="weight">Weight</label>
+          <input
+            type="number"
+            name="weight"
+            id="weight"
+            placeholder="type your weight in kg"
+          />
+        </div>
+        <div class="height-container">
+          <label for="height">Height</label>
+          <input
+            type="number"
+            id="height"
+            name="height"
+            placeholder="type your height in meters"
+          />
+        </div>
+        <input id="submit-btn" type="submit" value="Submit" />
+      </form>
+      <div class="result-calculation">
+        <p id="text-info">Your Info</p>
+        <div class="info-container">
+          <p id="weight-info"></p>
+          <p id="height-info"></p>
+        </div>
+        <p id="text-results"></p>
+        <p id="category"></p>
+        <p id="ideal-weight"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

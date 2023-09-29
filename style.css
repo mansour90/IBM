@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #fbffe3;
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Onest', sans-serif;
+  color: #333333;
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#para {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-weight: 500;
+  text-align: center;
+}
+#para {
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+label {
+  font-weight: 800;
+  font-size: 1.2rem;
+  position: relative;
+  top: -2px;
+}
+
+input[type='number'] {
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.weight-container,
+.height-container {
+  background-color: #e2e6cc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+}
+
+input[type='submit'] {
+  background-color: #333333;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 0.75rem;
+  color: #e2e6cc;
+  font-weight: 800;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+}
+
+input[type='submit']:hover {
+  background-color: #292929;
+}
+
+input::placeholder {
+  font-style: italic;
+  font-size: 1.5rem;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.result-calculation {
+  margin-top: 2rem;
+  border-radius: 2px;
+  padding: 2rem;
+  background-color: #e0e4cc;
+  /* opacity: 0.5; */
+  display: none;
+}
+
+#text-results {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#text-info {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  color:#9e0c39;
+}
+#ideal-weight {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 500;
+  color:#1c8000;
+  /* background-color: #333333; */
+  padding: 5px;
+  border-radius:5px;
+}
+#category {
+  text-align: center;
+  color:#e21b5a;
+}
+.info-container {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 10px;
+}
+#weight-info,
+#height-info {
+  flex: 1;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
